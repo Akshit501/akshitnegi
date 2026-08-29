@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akshit Negi Resume</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      font-size: 8.8pt;
+      line-height: 1.28;
+      padding: 22px 26px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      width: 8.5in;
+      height: 11in;
+      overflow: hidden;
+    }
+    /* Header */
+    .header {
+      text-align: center;
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid #111;
+      margin-bottom: 10px;
+    }
+    .name {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: #111;
+      margin-bottom: 3px;
+    }
+    .contact-line {
+      font-size: 8pt;
+      color: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .contact-line a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+    .divider {
+      color: #888;
+    }
+
+    /* 2 Column Layout */
+    .container {
+      display: flex;
+      gap: 18px;
+    }
+    .left-col {
+      width: 32%;
+      border-right: 1px solid #e2e8f0;
+      padding-right: 14px;
+    }
+    .right-col {
+      width: 68%;
+    }
+
+    /* Section Headings */
+    .sec-title {
+      font-size: 8.8pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #0f172a;
+      border-bottom: 1.2px solid #0f172a;
+      padding-bottom: 1.5px;
+      margin-bottom: 6px;
+      margin-top: 9px;
+    }
+    .left-col .sec-title:first-child,
+    .right-col .sec-title:first-child {
+      margin-top: 0;
+    }
+
+    /* Left Column Items */
+    .skill-group {
+      margin-bottom: 6px;
+    }
+    .skill-title {
+      font-weight: 700;
+      font-size: 8pt;
+      color: #1e293b;
+      margin-bottom: 1px;
+    }
+    .skill-desc {
+      font-size: 7.6pt;
+      color: #475569;
+      line-height: 1.22;
+    }
+
+    .edu-item {
+      margin-bottom: 6px;
+    }
+    .edu-deg {
+      font-weight: 700;
+      font-size: 8pt;
+      color: #1e293b;
+    }
+    .edu-school {
+      font-size: 7.6pt;
+      color: #475569;
+    }
+    .edu-period {
+      font-size: 7.2pt;
+      color: #64748b;
+    }
+
+    .cert-item {
+      font-size: 7.6pt;
+      color: #334155;
+      margin-bottom: 3px;
+      line-height: 1.22;
+    }
+
+    .dossier-item {
+      font-size: 7.6pt;
+      color: #334155;
+      margin-bottom: 4px;
+      line-height: 1.22;
+    }
+    .dossier-item strong {
+      color: #0f172a;
+    }
+
+    /* Right Column Items */
+    .summary-text {
+      font-size: 8pt;
+      color: #334155;
+      line-height: 1.3;
+      text-align: justify;
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 10px;
+      font-size: 7.8pt;
+      color: #334155;
+      line-height: 1.26;
+      margin-bottom: 3px;
+    }
+    .bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: -1px;
+      font-size: 8.5pt;
+      color: #0f172a;
+      font-weight: bold;
+    }
+    .bullet-list li strong {
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    .job-header, .proj-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+      margin-top: 5px;
+    }
+    .job-title, .proj-title {
+      font-size: 8.2pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .job-title span, .proj-title span {
+      font-weight: 400;
+      color: #475569;
+    }
+    .job-period, .proj-period {
+      font-size: 7.6pt;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    .interests-text {
+      font-size: 7.8pt;
+      color: #475569;
+      line-height: 1.28;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1 class="name">Akshit Negi</h1>
+    <div class="contact-line">
+      <span>Ghaziabad, UP</span>
+      <span class="divider">|</span>
+      <span><a href="mailto:akshitnegi501@gmail.com">akshitnegi501@gmail.com</a></span>
+      <span class="divider">|</span>
+      <span>+91 9625194401</span>
+      <span class="divider">|</span>
+      <span><a href="https://linkedin.com/in/akshit-negi-9533582b0" target="_blank">linkedin.com/in/akshit-negi-9533582b0</a></span>
+      <span class="divider">|</span>
+      <span><a href="https://github.com/Akshit501" target="_blank">github.com/Akshit501</a></span>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Left Column -->
+    <div class="left-col">
+      <div class="sec-title">Technical Skills</div>
+
+      <div class="skill-group">
+        <div class="skill-title">AI & Automation</div>
+        <div class="skill-desc">Gemini, Claude, Antigravity, GitHub Copilot, Cursor, OpenAI Codex, AI Agents, Prompt Engineering, Process Automation</div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-title">Backend & APIs</div>
+        <div class="skill-desc">Node.js, Express.js, RESTful APIs, Socket.IO, WebRTC, Cron Jobs, JWT</div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-title">Databases & Data</div>
+        <div class="skill-desc">MongoDB (Aggregation, Schema Design), MySQL, Firebase (Real-time DB, Auth)</div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-title">Frontend & UX</div>
+        <div class="skill-desc">React.js, JavaScript, HTML5, CSS3, Wireframing, Human-Centered Design</div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-title">Platforms & Tools</div>
+        <div class="skill-desc">Git, MongoDB Atlas, Render, Vercel, Postman, VS Code</div>
+      </div>
+
+      <div class="sec-title">Education</div>
+
+      <div class="edu-item">
+        <div class="edu-deg">BTech in IT</div>
+        <div class="edu-school">Noida Inst. of Engineering & Tech.</div>
+        <div class="edu-period">2022 – 2026</div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-deg">Class XII (CBSE)</div>
+        <div class="edu-school">NVM, Delhi</div>
+        <div class="edu-period">2021 – 2022</div>
+      </div>
+
+      <div class="sec-title">Certifications</div>
+      <div class="cert-item"><strong>Human-Centered Design</strong> – Acumen Academy</div>
+      <div class="cert-item"><strong>Introduction to AI</strong> – LinkedIn</div>
+      <div class="cert-item"><strong>Java Programming</strong> – Coursera</div>
+      <div class="cert-item"><strong>OOP in Java</strong> – Coursera</div>
+
+      <div class="sec-title">Personal Dossier</div>
+      <div class="dossier-item"><strong>Languages:</strong> English (Fluent), Hindi (Native)</div>
+      <div class="dossier-item"><strong>Soft Skills:</strong> User Empathy, Strategic Thinking, Problem Solving, Adaptive Leadership, Technical Translation</div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-col">
+      <div class="sec-title">Professional Summary</div>
+      <p class="summary-text">
+        <strong>Aspiring Technical Product Manager (TPM)</strong> and results-driven <strong>Backend Developer Intern</strong> with a strong software engineering foundation and expertise in building scalable, real-time communication and data platforms. Hands-on expert in leveraging cutting-edge generative AI technologies—including Large Language Models (Claude, Gemini, Codex), AI code assistants (Cursor, GitHub Copilot, Antigravity), and AI agents—to automate workflows, accelerate product prototyping, and optimize delivery lifecycles. Proven ability to translate complex business needs into robust technical requirements, collaborate across cross-functional engineering teams, and utilize data-driven insights to build user-centric products.
+      </p>
+
+      <div class="sec-title">Core Competencies</div>
+      <ul class="bullet-list">
+        <li><strong>AI & Automation Product Scoping:</strong> Designing LLM integrations, prompt engineering, task-automation engines, and agentic workflows.</li>
+        <li><strong>Technical PM Scoping:</strong> System architecture, API (RESTful) designs, database optimization, and real-time protocol management (WebRTC, WebSockets).</li>
+        <li><strong>Product Strategy & Agile:</strong> Roadmap planning, competitor analysis, user research, feature prioritization (RICE, MoSCoW), and Agile sprints.</li>
+        <li><strong>Data-Driven Decisions:</strong> Metrics analysis, strong algorithmic logic, database schema optimization, and performance optimization.</li>
+      </ul>
+
+      <div class="sec-title">Professional Experience</div>
+      <div class="job-header">
+        <div class="job-title">Backend Developer Intern <span>| TECHUGO</span></div>
+        <div class="job-period">March 2026 – Present</div>
+      </div>
+      <ul class="bullet-list">
+        <li><strong>Product Scoping & Specifications:</strong> Collaborated with stakeholders (UX, QA, Dev) to translate requirements into technical specs, architectures, and sprint backlogs.</li>
+        <li><strong>AI-Enhanced Velocity:</strong> Built custom automation scripts and utilized AI tools (Cursor, Copilot, Claude, Gemini) to automate boilerplate, unit testing, and workflows, reducing prototyping time.</li>
+        <li><strong>Database Scale & Latency:</strong> Spearheaded database performance tuning and MongoDB aggregation pipeline optimization, improving platform efficiency and query speed.</li>
+        <li><strong>Real-time Scoping:</strong> Led the integration of WebRTC and Socket.IO for peer-to-peer real-time communication features, enhancing active user interaction.</li>
+        <li><strong>Growth Loops & Automation:</strong> Designed automated growth messaging engines (Nodemailer, Cron Jobs) to trigger contextual transactions, improving user retention and communication flow.</li>
+      </ul>
+
+      <div class="sec-title">Key Projects</div>
+      <div class="proj-header">
+        <div class="proj-title">PayPulse (Subscription Payment Tracker) <span>| Product Owner & Lead</span></div>
+        <div class="proj-period">2025-26</div>
+      </div>
+      <ul class="bullet-list">
+        <li><strong>What it does:</strong> A web app that helps people track their subscriptions and stop paying for services they forgot about.</li>
+        <li><strong>Built with AI help:</strong> Used AI tools (Gemini, Claude, Codex, Cursor) to write tests, set up the database, and document the API faster.</li>
+        <li><strong>Keeping users engaged:</strong> Added automatic reminders before renewal dates, which increased user retention by 40%.</li>
+        <li><strong>Keeping data safe:</strong> Set up secure login (JWT) and safe storage so users’ payment and account details stay private.</li>
+      </ul>
+
+      <div class="proj-header">
+        <div class="proj-title">PDF Converter (PdfDrip) <span>| Founder & Developer</span></div>
+        <div class="proj-period">2025-26</div>
+      </div>
+      <ul class="bullet-list">
+        <li><strong>What it does:</strong> Built PdfDrip, a browser tool with 10 features for working with PDFs — merge, split, compress, convert, and more — all in one place.</li>
+        <li><strong>Keeping data safe:</strong> Made every file operation run directly in the browser instead of on a server, so users’ files stay private and are never uploaded anywhere.</li>
+        <li><strong>Built with AI help:</strong> Used AI coding tools (Claude, Cursor) to build and improve the app faster, shipping new features in less time.</li>
+        <li><strong>Simple, clean design:</strong> Designed a clean, easy-to-use interface with light and dark mode that works smoothly on both phone and desktop.</li>
+      </ul>
+
+      <div class="sec-title">Interests</div>
+      <p class="interests-text">
+        Emerging AI agent frameworks, prompt engineering, building developer automation systems, human-centered product design, and tracking tech market innovations.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

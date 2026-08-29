@@ -15,7 +15,6 @@ import {
   Database,
   Shield,
   Cloud,
-  Wrench,
   Award,
   GraduationCap,
   Briefcase,
@@ -26,21 +25,21 @@ import { Reveal, Typewriter, Magnetic, ParticleField } from "@/components/Portfo
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Akshit Negi — Backend Developer & API Engineer" },
+      { title: "Akshit Negi — Technical Product Manager" },
       {
         name: "description",
         content:
-          "Portfolio of Akshit Negi — Backend Developer Trainee at Techugo. Building scalable REST APIs, real-time systems and automated pipelines with Node.js, Express and MongoDB.",
+          "Portfolio of Akshit Negi — Aspiring Technical Product Manager and Backend Developer Intern at Techugo. Scoping AI-enhanced, real-time products from technical spec to shipped feature.",
       },
       { name: "author", content: "Akshit Negi" },
-      { name: "keywords", content: "Akshit Negi, Backend Developer, Node.js, Express, MongoDB, API Engineer, Portfolio, Full Stack Developer, India" },
-      { property: "og:title", content: "Akshit Negi — Backend Developer & API Engineer" },
-      { property: "og:description", content: "Scalable REST APIs, real-time systems and automated backends. Node.js · Express · MongoDB." },
+      { name: "keywords", content: "Akshit Negi, Technical Product Manager, TPM, AI Product Manager, Product Strategy, Node.js, MongoDB, API Design, Portfolio, India" },
+      { property: "og:title", content: "Akshit Negi — Technical Product Manager" },
+      { property: "og:description", content: "Scoping AI-enhanced, real-time products from technical spec to shipped feature. Product strategy · System architecture · LLM integration." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Akshit Negi — Backend Developer" },
-      { name: "twitter:description", content: "Scalable REST APIs, real-time systems and automated backends." },
+      { name: "twitter:title", content: "Akshit Negi — Technical Product Manager" },
+      { name: "twitter:description", content: "Scoping AI-enhanced, real-time products from technical spec to shipped feature." },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [
@@ -50,12 +49,12 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Akshit Negi",
-          jobTitle: "Backend Developer",
+          jobTitle: "Technical Product Manager",
           email: "mailto:akshitnegi501@gmail.com",
           telephone: "+91-9625194401",
           address: { "@type": "PostalAddress", addressLocality: "Ghaziabad", addressRegion: "UP", addressCountry: "IN" },
           sameAs: ["https://github.com/Akshit501", "https://linkedin.com/in/akshit-negi-9533582b0"],
-          knowsAbout: ["Node.js", "Express.js", "MongoDB", "REST APIs", "Socket.IO", "WebRTC", "JWT"],
+          knowsAbout: ["Product Strategy", "AI & LLM Product Scoping", "System Architecture", "Roadmap Planning", "Agile", "Node.js", "MongoDB", "REST APIs", "WebRTC"],
         }),
       },
     ],
@@ -75,56 +74,65 @@ const nav = [
 ];
 
 const skillsWithLevel = [
-  { name: "Node.js", level: 92 },
-  { name: "Express.js", level: 90 },
-  { name: "MongoDB", level: 88 },
-  { name: "JavaScript", level: 88 },
-  { name: "REST API Design", level: 90 },
-  { name: "Socket.IO / WebRTC", level: 78 },
-  { name: "MySQL", level: 75 },
-  { name: "React.js", level: 78 },
-  { name: "JWT · Bcrypt · Auth", level: 85 },
-  { name: "Git & GitHub", level: 88 },
+  { name: "Product & Technical Scoping", level: 92 },
+  { name: "AI / LLM Integration", level: 90 },
+  { name: "System Architecture & API Design", level: 90 },
+  { name: "Roadmap & Prioritization (RICE, MoSCoW)", level: 85 },
+  { name: "Agile Sprints & Delivery", level: 85 },
+  { name: "Database Design & Optimization", level: 88 },
+  { name: "Real-time Protocols (WebRTC, Sockets)", level: 78 },
+  { name: "Data-Driven Decision Making", level: 84 },
+  { name: "User Research & Competitor Analysis", level: 78 },
+  { name: "Cross-functional Collaboration", level: 88 },
 ];
 
 const floatingTech = [
-  "Node.js", "Express", "MongoDB", "React", "JavaScript",
-  "Socket.IO", "JWT", "Git", "Firebase", "MySQL",
-  "Nodemailer", "Mongoose", "REST", "WebRTC", "Postman",
+  "Product Strategy", "LLM Integration", "Prompt Engineering", "RICE", "MoSCoW",
+  "Roadmapping", "AI Agents", "Antigravity", "API Design", "WebRTC", "MongoDB",
+  "User Research", "Agile Sprints", "System Architecture", "Node.js", "Postman",
+  "Claude", "Gemini", "Cursor", "Human-Centered Design",
 ];
 
 const skillGroups = [
-  { icon: Code2, title: "Frontend", items: ["React.js", "JavaScript", "HTML", "CSS"] },
-  { icon: Server, title: "Backend", items: ["Node.js", "Express.js", "REST APIs", "Socket.IO", "WebRTC", "Cron Jobs", "Nodemailer", "Multer"] },
-  { icon: Database, title: "Database", items: ["MongoDB Atlas", "MySQL", "Mongoose ODM", "Aggregation Pipelines", "Schema Design"] },
-  { icon: Shield, title: "Auth & Security", items: ["JWT", "Bcrypt", "Arcjet Rate Limiting", "Firebase"] },
-  { icon: Cloud, title: "Deployment", items: ["Render", "Vercel", "GitHub", "Firebase", "MongoDB Atlas"] },
-  { icon: Wrench, title: "Tools", items: ["Git", "VS Code", "Postman", "npm"] },
+  { icon: Sparkles, title: "AI & Automation", items: ["Gemini", "Claude", "Antigravity", "GitHub Copilot", "Cursor", "OpenAI Codex", "AI Agents", "Prompt Engineering", "Process Automation"] },
+  { icon: Code2, title: "Product Strategy & Agile", items: ["Roadmap Planning", "Competitor Analysis", "User Research", "RICE / MoSCoW Prioritization", "Agile Sprints"] },
+  { icon: Server, title: "Backend & APIs", items: ["Node.js", "Express.js", "RESTful APIs", "Socket.IO", "WebRTC", "Cron Jobs", "JWT"] },
+  { icon: Database, title: "Databases & Data", items: ["MongoDB (Aggregation & Schema Design)", "MySQL", "Firebase (Real-time DB, Auth)", "Performance Tuning"] },
+  { icon: Shield, title: "Frontend & UX", items: ["React.js", "JavaScript", "HTML5", "CSS3", "Wireframing", "Human-Centered Design"] },
+  { icon: Cloud, title: "Platforms & Tools", items: ["Git", "MongoDB Atlas", "Render", "Vercel", "Postman", "VS Code"] },
 ];
 
 const experiences = [
   {
-    role: "Backend Developer Trainee",
+    role: "Backend Developer Intern",
     company: "Techugo",
-    period: "Current",
+    period: "March 2026 – Present",
     points: [
-      "Develop RESTful APIs using Express.js with a Repository-Controller-Services architecture for scalable code organization.",
-      "Implement MongoDB aggregation pipelines for complex data queries and transformations, optimizing database performance.",
-      "Design automated email systems with Nodemailer for transactional emails and user notifications.",
-      "Build scheduled task management using Cron Jobs for automated background processes.",
-      "Implement real-time communication using Socket.IO and WebRTC for peer-to-peer connectivity.",
-      "Implement JWT authentication and Bcrypt password hashing for secure user credential management.",
+      "Product Scoping & Specifications: Collaborate with stakeholders (UX, QA, Dev) to translate requirements into technical specs, architectures, and sprint backlogs.",
+      "AI-Enhanced Velocity: Build custom automation scripts and use AI tools (Cursor, Copilot, Claude, Gemini) to automate boilerplate, unit testing, and workflows, reducing prototyping time.",
+      "Database Scale & Latency: Spearhead database performance tuning and MongoDB aggregation pipeline optimization, improving platform efficiency and query speed.",
+      "Real-time Scoping: Lead the integration of WebRTC and Socket.IO for peer-to-peer real-time communication features, enhancing active user interaction.",
+      "Growth Loops & Automation: Design automated growth messaging engines (Nodemailer, Cron Jobs) to trigger contextual transactions, improving user retention and communication flow.",
     ],
   },
 ];
 
 const projects = [
   {
-    title: "Subscription Tracker API",
-    tagline: "Automated recurring payment reminders",
-    stack: ["Node.js", "Express.js", "MongoDB", "QStash", "JWT", "Nodemailer"],
+    title: "PayPulse",
+    tagline: "Subscription Payment Tracker · Product Owner & Lead",
+    stack: ["Product Ownership", "Node.js", "MongoDB", "JWT", "AI-Assisted Dev"],
     description:
-      "A subscription management system with automated email reminders for recurring payments. Secure JWT auth, bcrypt-encrypted credentials, QStash scheduled notifications and Nodemailer alerts. Deployed on Render with MongoDB Atlas.",
+      "A web app that helps people track their subscriptions and stop paying for services they forgot about. Scoped the product end-to-end, used AI tools (Gemini, Claude, Codex, Cursor) to write tests, set up the database, and document the API faster, and shipped automatic renewal reminders that lifted user retention by 40%. Secure JWT login keeps payment and account details private.",
+    github: "https://github.com/Akshit501",
+    demo: "https://github.com/Akshit501",
+  },
+  {
+    title: "PdfDrip",
+    tagline: "PDF Converter Toolkit · Founder & Developer",
+    stack: ["Product Design", "Privacy-First Architecture", "React.js", "AI-Assisted Dev"],
+    description:
+      "Founded and built PdfDrip, a browser tool with 10 features for working with PDFs — merge, split, compress, convert, and more, all in one place. Every file operation runs client-side so users' files stay private and are never uploaded. Used AI coding tools (Claude, Cursor) to ship new features faster, with a clean light/dark interface that works smoothly on phone and desktop.",
     github: "https://github.com/Akshit501",
     demo: "https://github.com/Akshit501",
   },
@@ -133,14 +141,13 @@ const projects = [
 const education = [
   { degree: "BTech in Information Technology", school: "Noida Institute of Engineering & Technology", period: "2022 – 2026" },
   { degree: "Class XII — CBSE", school: "NVM, Delhi", period: "2021 – 2022" },
-  { degree: "Class X — CBSE", school: "St. Thomas School", period: "2019 – 2020" },
 ];
 
 const certifications = [
-  { title: "Java Programming: Arrays, Lists, and Structured Data", issuer: "Coursera" },
-  { title: "Object Oriented Programming in Java", issuer: "Coursera" },
-  { title: "Introduction to Artificial Intelligence", issuer: "LinkedIn Learning" },
-  { title: "Epoch Hackathon Participant", issuer: "IIIT Delhi" },
+  { title: "Human-Centered Design", issuer: "Acumen Academy" },
+  { title: "Introduction to AI", issuer: "LinkedIn" },
+  { title: "Java Programming", issuer: "Coursera" },
+  { title: "OOP in Java", issuer: "Coursera" },
 ];
 
 /* ---------------- Root ---------------- */
@@ -253,7 +260,7 @@ function Hero() {
       <div className="mx-auto max-w-6xl w-full">
         <Reveal>
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur px-3 py-1 text-xs text-muted-foreground font-mono">
-            <span className="h-2 w-2 rounded-full bg-primary animate-pulse" /> Available for full-time roles · 2026
+            <span className="h-2 w-2 rounded-full bg-primary animate-pulse" /> Open to Technical PM & Product roles · 2026
           </div>
         </Reveal>
         <Reveal delay={100}>
@@ -265,10 +272,10 @@ function Hero() {
           <div className="mt-6 text-lg sm:text-2xl md:text-3xl font-medium min-h-[2.4em]">
             <Typewriter
               phrases={[
-                "Backend Developer",
-                "API Engineer",
-                "Problem Solver",
-                "Node.js · MongoDB Specialist",
+                "Technical Product Manager",
+                "AI & Automation Product Scoping",
+                "Backend Developer Intern",
+                "Builder at Heart",
               ]}
               className="text-foreground"
             />
@@ -276,8 +283,9 @@ function Hero() {
         </Reveal>
         <Reveal delay={300}>
           <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-            I design and ship scalable REST APIs, real-time systems and automated backends. Currently a Backend Developer Trainee at{" "}
-            <span className="text-foreground">Techugo</span>, and a final-year BTech IT student with 100+ DSA problems solved.
+            I scope and ship AI-enhanced, real-time products — translating business needs into technical specs, roadmaps and shipped
+            features. Currently a Backend Developer Intern at <span className="text-foreground">Techugo</span>, and a final-year BTech IT
+            student building toward a Technical Product Manager role.
           </p>
         </Reveal>
         <Reveal delay={400}>
@@ -305,7 +313,7 @@ function Hero() {
         <Reveal delay={550}>
           <div className="mt-16 flex items-center gap-6 text-sm text-muted-foreground font-mono flex-wrap">
             <span className="flex items-center gap-2"><MapPin className="h-3.5 w-3.5" /> Ghaziabad, UP</span>
-            <span className="hidden sm:flex items-center gap-2"><span className="h-1 w-1 rounded-full bg-muted-foreground" /> 100+ DSA solved</span>
+            <span className="hidden sm:flex items-center gap-2"><span className="h-1 w-1 rounded-full bg-muted-foreground" /> +40% retention shipped on PayPulse</span>
             <span className="hidden sm:flex items-center gap-2"><span className="h-1 w-1 rounded-full bg-muted-foreground" /> BTech IT '26</span>
           </div>
         </Reveal>
@@ -334,20 +342,57 @@ function Section({ id, eyebrow, title, children }: { id: string; eyebrow: string
 /* ---------------- About ---------------- */
 
 function About() {
+  const softSkills = ["User Empathy", "Strategic Thinking", "Problem Solving", "Adaptive Leadership", "Technical Translation"];
+  const interests = ["Emerging AI Agent Frameworks", "Prompt Engineering", "Developer Automation Systems", "Human-Centered Design", "Tech Market Innovations"];
+
   return (
-    <Section id="about" eyebrow="01 — About" title="Building backends that scale.">
+    <Section id="about" eyebrow="01 — About" title="Scoping products that scale.">
       <Reveal>
         <div className="grid md:grid-cols-3 gap-8">
-          <p className="md:col-span-2 text-lg text-muted-foreground leading-relaxed">
-            I'm a Backend Developer Trainee at Techugo and a final-year BTech IT student, focused on shipping production-grade Node.js services.
-            I care about clean architecture (repository-controller-services), database performance with aggregation pipelines, and reliable
-            automation via cron jobs and message queues. Strong problem-solver with 100+ DSA problems solved — highly motivated to contribute
-            to innovative teams and deliver efficient, scalable solutions.
-          </p>
+          <div className="md:col-span-2 space-y-6">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I'm an aspiring Technical Product Manager and Backend Developer Intern at Techugo, with a strong software engineering
+              foundation in scalable, real-time communication and data platforms. I lean on generative AI — LLMs (Claude, Gemini, Codex),
+              AI code assistants (Cursor, GitHub Copilot, Antigravity) and AI agents — to automate workflows, accelerate prototyping and
+              optimize delivery lifecycles. I translate complex business needs into robust technical requirements, collaborate across
+              cross-functional engineering teams, and use data-driven insights to build user-centric products.
+            </p>
+
+            <div className="rounded-2xl border border-border bg-card/40 backdrop-blur p-6 space-y-4">
+              <div>
+                <h4 className="font-mono text-xs uppercase tracking-widest text-primary mb-2.5">Soft Skills & Leadership</h4>
+                <div className="flex flex-wrap gap-2">
+                  {softSkills.map((s) => (
+                    <span key={s} className="rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-mono text-foreground">
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="pt-3 border-t border-border/60 flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <h4 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-1.5">Languages</h4>
+                  <p className="text-sm font-mono text-foreground">English (Fluent) · Hindi (Native)</p>
+                </div>
+                <div className="max-w-md">
+                  <h4 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-1.5">Core Interests</h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {interests.map((it) => (
+                      <span key={it} className="rounded-md bg-secondary/70 px-2 py-0.5 text-[11px] font-mono text-muted-foreground">
+                        {it}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="space-y-4">
-            <StatCard label="Experience" value="Techugo" hint="Backend trainee" />
-            <StatCard label="Focus" value="Node · MongoDB" hint="Scalable APIs" />
-            <StatCard label="DSA" value="100+" hint="Problems solved" />
+            <StatCard label="Experience" value="Techugo" hint="Backend Developer Intern" />
+            <StatCard label="Focus" value="AI Product Scoping" hint="LLMs · Agentic workflows" />
+            <StatCard label="Impact" value="+40%" hint="Retention lift on PayPulse" />
           </div>
         </div>
       </Reveal>
@@ -370,7 +415,7 @@ function StatCard({ label, value, hint }: { label: string; value: string; hint: 
 function Skills() {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <Section id="skills" eyebrow="02 — Toolkit" title="The stack I ship with.">
+    <Section id="skills" eyebrow="02 — Toolkit" title="How I scope and ship products.">
       <FloatingTechCloud />
 
       <div className="mt-14 grid lg:grid-cols-2 gap-10">
@@ -486,7 +531,7 @@ function FloatingTechCloud() {
 
 function Experience() {
   return (
-    <Section id="experience" eyebrow="03 — Experience" title="Where I've been shipping.">
+    <Section id="experience" eyebrow="03 — Experience" title="Where I've been scoping and shipping.">
       <div className="relative">
         <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-primary/60 via-border to-transparent" />
         <div className="space-y-8">
@@ -526,7 +571,7 @@ function Experience() {
 
 function Projects() {
   return (
-    <Section id="projects" eyebrow="04 — Featured work" title="Things I've built.">
+    <Section id="projects" eyebrow="04 — Featured work" title="Products I've owned, end to end.">
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((p) => (
           <Reveal key={p.title}>
@@ -658,7 +703,7 @@ function FinalCta() {
                 Let's Build Something <span className="text-gradient">Amazing</span>
               </h2>
               <p className="mt-5 max-w-2xl mx-auto text-muted-foreground text-lg">
-                Have an idea, a product, or a role that needs a solid backend behind it? I'd love to hear about it.
+                Have a product that needs scoping, an AI feature that needs shipping, or a TPM role open? I'd love to hear about it.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <Magnetic>

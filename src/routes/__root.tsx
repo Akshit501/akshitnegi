@@ -10,7 +10,6 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
@@ -37,9 +36,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -77,18 +73,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Akshit Negi — Backend Developer & API Engineer" },
-      { name: "description", content: "Portfolio of Akshit Negi — Backend Developer Trainee at Techugo. Building scalable REST APIs, real-time systems and automated pipelines with Node.js, Express and MongoDB." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Akshit Negi — Backend Developer & API Engineer" },
-      { property: "og:description", content: "Portfolio of Akshit Negi — Backend Developer Trainee at Techugo. Building scalable REST APIs, real-time systems and automated pipelines with Node.js, Express and MongoDB." },
+      { title: "Akshit Negi — Technical Product Manager" },
+      { name: "description", content: "Portfolio of Akshit Negi — Aspiring Technical Product Manager and Backend Developer Intern at Techugo. Scoping AI-enhanced, real-time products from technical spec to shipped feature." },
+      { name: "author", content: "Akshit Negi" },
+      { property: "og:title", content: "Akshit Negi — Technical Product Manager" },
+      { property: "og:description", content: "Scoping AI-enhanced, real-time products from technical spec to shipped feature. Product strategy · System architecture · LLM integration." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Akshit Negi — Backend Developer & API Engineer" },
-      { name: "twitter:description", content: "Portfolio of Akshit Negi — Backend Developer Trainee at Techugo. Building scalable REST APIs, real-time systems and automated pipelines with Node.js, Express and MongoDB." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/63871c93-47ee-43ca-bd72-0a72a685ae58/id-preview-513bce84--165d9dc7-bfc3-4c04-a1c3-0568ce6b09f0.lovable.app-1783449074335.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/63871c93-47ee-43ca-bd72-0a72a685ae58/id-preview-513bce84--165d9dc7-bfc3-4c04-a1c3-0568ce6b09f0.lovable.app-1783449074335.png" },
+      { name: "twitter:title", content: "Akshit Negi — Technical Product Manager" },
+      { name: "twitter:description", content: "Scoping AI-enhanced, real-time products from technical spec to shipped feature." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -98,6 +91,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
       },
+      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),

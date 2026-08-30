@@ -1,6 +1,6 @@
 # 🚀 Akshit Negi — Portfolio
 
-[![Live Website](https://img.shields.io/badge/🌐_Live_Website-Visit_Portfolio-blue?style=for-the-badge)](https://akshitnegi.vercel.app)
+[![Live Website](https://img.shields.io/badge/🌐_Live_Website-Visit_Portfolio-blue?style=for-the-badge)](https://akshitnegi.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Akshit501-181717?style=for-the-badge&logo=github)](https://github.com/Akshit501)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Akshit_Negi-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/akshit-negi-9533582b0)
 

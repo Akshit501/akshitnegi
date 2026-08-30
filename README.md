@@ -10,7 +10,7 @@
 
 ## 🔗 Quick Links
 
-- 🌐 **Live Website**: [Open Portfolio Website](https://akshitnegi.vercel.app) *(Replace with your live domain/Vercel/Netlify URL)*
+- 🌐 **Live Website**: [Open Portfolio Website](https://akshitnegi.vercel.app) 
 - 💼 **LinkedIn**: [linkedin.com/in/akshit-negi-9533582b0](https://linkedin.com/in/akshit-negi-9533582b0)
 - 🐙 **GitHub**: [github.com/Akshit501](https://github.com/Akshit501)
 - 📧 **Email**: [akshitnegi501@gmail.com](mailto:akshitnegi501@gmail.com)
